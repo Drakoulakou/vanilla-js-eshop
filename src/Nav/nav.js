@@ -1,5 +1,5 @@
 $(function(){
-    $("#nav-placeholder").load("/src/Nav/nav.html", function(){
+    $("#nav-placeholder").load("../Nav/nav.html", function(){
 
       let cart = localStorage.getItem("cartJSON");
       cart = JSON.parse(cart)
