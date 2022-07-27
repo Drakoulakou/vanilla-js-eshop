@@ -14,7 +14,8 @@ function fechProductsForCategory() {
             <p class="description">${product.description}</p>
             <p class="price">$ ${product.price}</p>
             <a href="product.html?id=${product.id}" id="button" class="btn">More details</a>
-            <button onclick="addProductToCart(${product.id})" class="btn">Add to cart</button>
+            <button id="button" class="btn">Add to Cart</button> 
+
           </div>
         `;
       }
@@ -26,5 +27,4 @@ function fechProductsForCategory() {
 fechProductsForCategory();
 
 document.getElementById("header").innerHTML = category;
-
 

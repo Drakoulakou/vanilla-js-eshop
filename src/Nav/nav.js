@@ -1,4 +1,9 @@
 $(function(){
-    $("#nav-placeholder").load("/src/Nav/nav.html");
-  });
+    $("#nav-placeholder").load("/src/Nav/nav.html", function(){
 
+      let cart = localStorage.getItem("cartJSON");
+      cart = JSON.parse(cart)
+
+      document.getElementById("cartTotal").innerHTML= cart ? cart.length : '';
+    });
+  });
